@@ -1,7 +1,7 @@
 import JobDialog from "./Components/JobDialog";
 import JobSeach from "./Components/JobSeach";
 import JobSidebar from "./Components/JobSidebar";
-import { SavedData } from "./Components/TestData";
+import SavedData from "./Components/TestData"
 
 export default function Home() {
   return (
@@ -9,16 +9,16 @@ export default function Home() {
       <div className="basis-1/6"><JobSidebar/></div>
       <div className="basis-5/6 ">
         <JobSeach/>
-        <div className='flex gap-2'>
+        <div className='flex gap-2 overflow-scroll'>
           <div className='flex flex-col'>
             <div className="bg-[#F4F4F4] justify-between flex text-[#212121] w-[329px] p-3">
               <h4 className="text-[17px] ">Saved</h4><h5>4 Jobs</h5>
               </div >
-              {SavedData.map((e,index)=>{
+           
 
-  <JobDialog data={e} key={index} />
+  <JobDialog data={SavedData} />
   
-              })}
+             
               
           </div>
           <div className='flex flex-col'>
