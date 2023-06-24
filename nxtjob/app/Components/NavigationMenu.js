@@ -7,7 +7,7 @@ import { CaretDownIcon } from '@radix-ui/react-icons';
 
 const NavigationMenuComponent = () => {
   return (
-    <NavigationMenu.Root className="relative z-[1] flex  justify-center">
+    <NavigationMenu.Root className="relative flex justify-center z-0">
       <NavigationMenu.List className="center shadow-blackA7 m-0 flex list-none rounded-[6px] bg-white p-1 ">
         <NavigationMenu.Item>
           <NavigationMenu.Trigger className="text-[#212121] hover:bg-[#F7F3FF] hover:font-[600]  hover:text-[#8246FD] focus:bg-[#F7F3FF] focus:text-[#8246FD] focus:font-[600]  group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[14px] font-medium leading-none outline-none ">

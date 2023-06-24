@@ -9,7 +9,7 @@ import {MdBugReport } from 'react-icons/md'
 
 const JobSidebar = () => {
   return (
-    <div className='w-full text-black text-[14px] py-[20px] px-[10px] bg-white rounded-[8px] flex flex-col gap-1'>
+    <div className='min-w-[213px] w-full text-black text-[14px] py-[20px] px-[10px] bg-white rounded-[12px] flex flex-col gap-1'>
     <div className='flex items-center gap-2 cursor-pointer bg-[#8246FD] text-[#fff] font-[600] p-[10px] rounded-[8px]'><HiSquares2X2 className='text-[24px]'/> Boards</div>
     <div className='flex items-center gap-2 cursor-pointer font-[600] p-[10px] rounded-[8px]'><RiTeamFill  className='text-[24px]'/> Networking</div>
     <div className='flex items-center gap-2 cursor-pointer font-[600] p-[10px] rounded-[8px]'><RiInboxArchiveFill  className='text-[24px]'/> Archive Jobs</div>

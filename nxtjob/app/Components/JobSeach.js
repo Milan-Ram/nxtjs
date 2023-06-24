@@ -6,7 +6,7 @@ import {FiSearch} from 'react-icons/fi'
 
 const JobSeach = () => {
   return (
-    <div className='flex items-center justify-between h-[80px] px-5 py-3 basis-5/6 bg-white rounded-[8px] w-full'>
+    <div className='flex items-center justify-between h-[80px] px-5 py-3 basis-5/6 bg-white rounded-[8px] w-full max-w-[1143px]'>
         <h4 className='text-[18px] text-[#212121] font-[600]'>My 2023 Job Search</h4>
         <Form.Root className=" flex items-center gap-4">
     <Form.Field className="flex items-center border-[1px] border-[#DDDDDD] px-1 rounded-[8px]" name="job-search">
