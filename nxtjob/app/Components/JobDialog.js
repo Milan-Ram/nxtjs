@@ -6,6 +6,7 @@ import SavedData from './TestData';
 import JobDescHeader from './jobDescHeader';
 import DescSidebar from './DialogBoxComps/descSidebar';
 import TimeLine from './DialogBoxComps/timeLine';
+import DescriptionBox from './DialogBoxComps/descriptionBox';
 
 
 const JobDialog = ({data}) => {
@@ -33,9 +34,9 @@ return(
     </Dialog.Trigger>
     )
 })}
-    <Dialog.Portal className='w-[90vw] z-10'> 
+    <Dialog.Portal className='w-[90vw] z-10 overflow-hidden'> 
       <Dialog.Overlay className="bg-blackA9 z-10 data-[state=open]:animate-overlayShow fixed inset-0" />
-      <Dialog.Content className="data-[state=open]:animate-contentShow fixed z-10 top-[50%] left-[50%] h-[85vh] max-h-[85vh] w-[90vw] max-w-[1144px]  translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+      <Dialog.Content className="data-[state=open]:animate-contentShow overflow-hidden fixed z-10 top-[50%] left-[50%] h-[85vh] max-h-[85vh] w-[90vw] max-w-[1144px]  translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
 
         {/* <fieldset className="mb-[15px] flex items-center gap-5">
           <label className="text-violet11 w-[90px] text-right text-[15px]" htmlFor="username">
@@ -52,7 +53,7 @@ return(
         <div className='flex flex-row'>
 
       <div className="basis-1/6"><DescSidebar/></div>
-      <div className="basis-4/6 "></div>
+      <div className="basis-4/6 "><DescriptionBox/></div>
       <div className="basis-1/6 "><TimeLine/></div>
         </div>
 
