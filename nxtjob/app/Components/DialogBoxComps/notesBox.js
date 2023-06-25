@@ -11,7 +11,7 @@ const NotesBox = () => {
 
     return (
         <>
-            <div className='bg-[#F7F3FF] p-[20px] overflow-scroll '>
+            <div className='bg-[#F7F3FF] p-[20px] h-full overflow-visible '>
                 <div className='flex items-center justify-between flex-row mb-[20px]'><h3 className='text-[#212121] text-[18px] font-[700]'>Notes</h3>
 
                     <button onClick={(e) => { setisEditing3(true) }} className=" hover:bg-mauve3 shadow-none bg-[#57A4F2] text-[#fff] inline-flex h-[35px] items-center justify-center rounded-[4px]  px-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px] focus:shadow-black">

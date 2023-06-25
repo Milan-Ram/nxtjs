@@ -10,11 +10,11 @@ const SelectComp = () => {
   return(
   <Select.Root>
     <Select.Trigger
-      className="inline-flex items-center justify-center rounded px-[15px] text-[13px] leading-none h-[35px] gap-[5px] bg-[#EBE2FF] text-[#212121]  shadow-[0_2px_10px] shadow-black/10 hover:bg-mauve3 focus:shadow-[0_0_0_2px] focus:shadow-black data-[placeholder]:text-violet9 outline-none"
+      className="inline-flex items-center justify-center rounded px-[15px] text-[13px] leading-none h-[35px] gap-[5px] bg-[#EBE2FF] text-[#212121]  shadow-[0_2px_10px] shadow-black/10 hover:bg-mauve3 focus:shadow-[0_0_0_2px] focus:shadow-black data-[placeholder]:text-[#000] outline-none"
       aria-label="Food"
     >
       <Select.Value placeholder={selected} />
-      <Select.Icon className="text-violet11">
+      <Select.Icon className="text-[#000]">
         <ChevronDownIcon />
       </Select.Icon>
     </Select.Trigger>
@@ -34,7 +34,7 @@ const SelectComp = () => {
           </Select.Group>
 
         </Select.Viewport>
-        <Select.ScrollDownButton className="flex items-center justify-center h-[25px] bg-white text-violet11 cursor-default">
+        <Select.ScrollDownButton className="flex items-center justify-center h-[25px] bg-white text-[#000] cursor-default">
           <ChevronDownIcon />
         </Select.ScrollDownButton>
       </Select.Content>

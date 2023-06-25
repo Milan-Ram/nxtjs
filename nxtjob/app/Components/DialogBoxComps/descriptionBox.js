@@ -41,7 +41,7 @@ At TalentKompass Deutschland, we are committed to helping our interns develop th
     <>
     {/* {isEditing !== true ? */}
     
-    <div className='bg-[#F7F3FF]'>
+    <div className='bg-[#F7F3FF] p-[20px]'>
         <div className='flex items-center justify-between flex-row mb-[20px]'><h3 className='text-[#212121] text-[18px] font-[700]'>Description</h3>
         {isEditing !== true ? 
         <Pencil1Icon className='text-[#212121] text-[17px] cursor-pointer' onClick={(e)=>{setIsEditing(true)}} />

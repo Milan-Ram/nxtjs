@@ -18,7 +18,7 @@ const [address , setAddress] = React.useState(`Ahmedabad, Gujarat, India`);
 
   return (
     <>   
-    <div className='bg-[#F7F3FF] p-[20px] overflow-scroll '>
+    <div className='bg-[#F7F3FF] p-[20px] h-fit'>
         <div className='flex items-center justify-between flex-row mb-[20px]'><h3 className='text-[#212121] text-[18px] font-[700]'>Compnay Info</h3>
         {isEditing2 !== true ? 
         <Pencil1Icon className='text-[#212121] text-[17px] cursor-pointer' onClick={(e)=>{setisEditing2(true)}} />
@@ -37,7 +37,7 @@ const [address , setAddress] = React.useState(`Ahmedabad, Gujarat, India`);
     </div>
 <div className='flex flex-col h-full'>
 
-      <Form.Root className="w-full h-[300px] relative">
+      <Form.Root className="w-full h-fit relative">
 <div className='flex flex-row items-center gap-[10px]'>
 <Image src="/jobLogo2.png" width={50} height={50} alt="company-logo"/>
 <Form.Field className="grid mb-[10px]" name="question relative ">
@@ -59,7 +59,7 @@ const [address , setAddress] = React.useState(`Ahmedabad, Gujarat, India`);
     <Form.Label className="text-[13px] font-medium leading-[35px] text-black">Description</Form.Label>
       <Form.Control asChild>              
         <textarea
-          className="box-border w-full bg-[#FFF] pb-[100px]  h-[100px]  inline-flex appearance-none items-center justify-center rounded-[4px] p-[10px] text-[14px] leading-none  text-[#5A5A5A]  border-none outline-none hover:shadow-[0_0_0_1px_black] focus:shadow-[0_0_0_2px_black] selection:color-white selection:bg-blackA9 "
+          className="box-border w-full h-fit bg-[#FFF]    inline-flex appearance-none items-center justify-center rounded-[4px] py-[30px] px-[15px] overflow-hidden text-[14px] leading-none  text-[#5A5A5A]  border-none outline-none selection:color-white selection:bg-blackA9 "
        value={description}
        onChange={(e)=>{setDescription(e.target.value)}}
        readOnly={!isEditing2}
@@ -67,7 +67,7 @@ const [address , setAddress] = React.useState(`Ahmedabad, Gujarat, India`);
       </Form.Control>
     </Form.Field>
     {/* ============================================================================================================ */}
-    <div className={`flex ${isEditing2 !== true ? "flex-col" : "flex-row" } flex-col flex-wrap justify-between items-center`}>
+    <div className={`flex ${isEditing2 !== true ? ("flex-col","justify-between") : ("flex-row" ,"justify-around") } flex-wrap  items-center`}>
 
     <Form.Field className="grid mb-[10px]" name="question relative basis1/2 basis1/2 ">
     <Form.Label className="text-[13px] font-medium leading-[35px] text-black">Website</Form.Label>

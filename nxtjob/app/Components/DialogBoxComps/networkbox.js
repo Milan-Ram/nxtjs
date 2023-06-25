@@ -1,10 +1,8 @@
 "use client"
-import { Pencil1Icon } from '@radix-ui/react-icons';
+
 import React from 'react'
-import Image from 'next/image';
-import * as Form from '@radix-ui/react-form';
-import JobSeach from '../JobSeach';
 import CollapsibleComp from './collapsibleComp';
+import NetworkSearch from './networksSearch';
 
 
 const NetworkBox = () => {
@@ -59,8 +57,8 @@ const NetworkBox = () => {
 
     return (
         <>
-            <div className='bg-[#F7F3FF] h-full p-[20px] overflow-scroll  overflow-x-hidden '>
-                <JobSeach title={'Your Network'} searchText={'Create New'} color={'#57A4F2'} />
+            <div className='bg-[#F7F3FF] h-full p-[20px]   overflow-hidden rounded-[8px] '>
+               <NetworkSearch/>
                 <div className='mt-[20px]'>
                     {NetworkData.map((e) => {
                         return (

@@ -27,7 +27,7 @@ const DeleteAlert = () => (
             </button>
           </AlertDialog.Cancel>
           <AlertDialog.Action asChild>
-            <button className="text-red11 bg-red4 hover:bg-red5 focus:shadow-red7 inline-flex h-[35px] items-center justify-center rounded-[4px] px-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
+            <button className="text-red11 bg-[#EF4444]  hover:bg-red5 z-30 focus:shadow-red7 inline-flex h-[35px] items-center justify-center rounded-[4px] px-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
               Yes, delete Job Item
             </button>
           </AlertDialog.Action>
