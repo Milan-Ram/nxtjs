@@ -7,6 +7,7 @@ import JobDescHeader from './jobDescHeader';
 import DescSidebar from './DialogBoxComps/descSidebar';
 import TimeLine from './DialogBoxComps/timeLine';
 import DescriptionBox from './DialogBoxComps/descriptionBox';
+import CompanyBox from './DialogBoxComps/companyBox';
 
 
 const JobDialog = ({data}) => {
@@ -53,7 +54,10 @@ return(
         <div className='flex flex-row'>
 
       <div className="basis-1/6"><DescSidebar/></div>
-      <div className="basis-4/6 "><DescriptionBox/></div>
+      <div className="basis-4/6 ">
+        {/* <DescriptionBox/> */}
+        <CompanyBox/>
+        </div>
       <div className="basis-1/6 "><TimeLine/></div>
         </div>
 
