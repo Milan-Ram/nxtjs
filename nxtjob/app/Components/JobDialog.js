@@ -8,13 +8,13 @@ import DescSidebar from './DialogBoxComps/descSidebar';
 import TimeLine from './DialogBoxComps/timeLine';
 import DescriptionBox from './DialogBoxComps/descriptionBox';
 import CompanyBox from './DialogBoxComps/companyBox';
+import NotesBox from './DialogBoxComps/notesBox';
+import NetworkBox from './DialogBoxComps/networkbox';
 
 
 const JobDialog = ({data}) => {
   // console.log(data)
-return(
-  
-  
+return( 
   <Dialog.Root>
     {SavedData.map((e)=>{
   return(
@@ -56,7 +56,9 @@ return(
       <div className="basis-1/6"><DescSidebar/></div>
       <div className="basis-4/6 ">
         {/* <DescriptionBox/> */}
-        <CompanyBox/>
+        {/* <CompanyBox/> */}
+        {/* <NotesBox/> */}
+        <NetworkBox/>
         </div>
       <div className="basis-1/6 "><TimeLine/></div>
         </div>
