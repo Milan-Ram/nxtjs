@@ -34,7 +34,7 @@ const TimeLine = () => {
                     {TimeLineData.map((e) => {
                         return (
 
-                            <div className='border-l-[1px] last:border-0 border-dashed py-[10px] pb-[20px] border-[#57A4F2] relative pl-1 '>
+                            <div key={e.id} className='border-l-[1px] last:border-0 border-dashed py-[10px] pb-[20px] border-[#57A4F2] relative pl-1 '>
                                 <div className='flex flex-row mb-[10px] items-center' ><div className='absolute -left-2 w-[16px] h-[16px] bg-[#57A4F2] rounded-full'></div><div className='text-[10px] text-[#9E9E9E] absolute left-3 '>{e.date}</div></div>
                                 <div className='flex flex-col bg-[#E4F2FF] p-[10px] mt-[20px] ml-[10px]  gap-[10px]'>
                                     <h3 className='text-[#5A5A5A] text-[12px] leading-4 font-bold'>{e.title}</h3>

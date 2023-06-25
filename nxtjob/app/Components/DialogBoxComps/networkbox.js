@@ -60,9 +60,9 @@ const NetworkBox = () => {
             <div className='bg-[#F7F3FF] h-full p-[20px]   overflow-hidden rounded-[8px] '>
                <NetworkSearch/>
                 <div className='mt-[20px]'>
-                    {NetworkData.map((e) => {
+                    {NetworkData.map((e,index) => {
                         return (
-                            <CollapsibleComp data={e} />
+                            <CollapsibleComp key={index} data={e} />
                         )
                     })}
                 </div>

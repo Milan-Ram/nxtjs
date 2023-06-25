@@ -40,7 +40,7 @@ const JobDialog = ({ Data }) => {
     <Dialog.Root>
       {Data.content.map((e) => {
         return (
-          <Dialog.Trigger asChild>
+          <Dialog.Trigger key={e.id} asChild>
             <button className="text-violet11 shadow-blackA7 hover:bg-mauve3 flex  w-full rounded-[8px] mb-2 flex-col bg-white p-[10px] gap-1 font-medium shadow-[0_2px_10px] focus:shadow-[0_0_0_2px] focus:shadow-black focus:outline-none">
               {e.savedByLoop === "true" ?
                 <div className='flex gap-3 items-center justify-between w-full'><div className='flex items-center gap-[10px]'><p className='text-[#57A4F2] font-[600] text-[13px]'>Saved By Loop</p><span className='text-[#5A5A5A] text-[11px]'>Expired in 2 Days</span></div><div><DotsVerticalIcon className='w-[19px] h-[19px] text-[#9E9E9E]' /></div></div>

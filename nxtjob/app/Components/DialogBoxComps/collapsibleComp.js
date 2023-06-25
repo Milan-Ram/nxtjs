@@ -21,7 +21,7 @@ const CollapsibleComp = ({data}) => {
             <Collapsible.Content>
             {data.content.map((item)=>{
                 return(
-                <div className="flex flex-row items-center w-full justify-between bg-white rounded-[8px] my-[10px] p-[10px] shadow-[0_2px_10px] shadow-blackA7">
+                <div key={item.id} className="flex flex-row items-center w-full justify-between bg-white rounded-[8px] my-[10px] p-[10px] shadow-[0_2px_10px] shadow-blackA7">
                     <div className='flex flex-row items-center gap-[10px]'>
                         <Image src={item.profileImg} className='object-cover' width={32} height={32} alt="avatar-logo" />
                         <div className='flex flex-col'><p className='text-[#212121] text-sm leading-5 font-normal'>{item.name}</p><p className='text-[#9E9E9E] text-[10px]'>UI/UX Designer at Crisil</p></div>
